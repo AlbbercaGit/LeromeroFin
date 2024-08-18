@@ -1,5 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .App {
   text-align: center;
+}
+.bg-secondary {
+  background-color: #ff6347; /* O el color que prefieras */
 }
 
 .App-logo {
@@ -35,4 +42,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.imagen{
+  background-image: url('./img/im1.png');
+}
+.bg-imagen{
+  background-image: url('./img/im1.png');
+}
+bg.blanco{
+  /* Ivory */
+  background-color: #fffff0;
+  /* Sonw */
+  /* background-color: #fffafa; */
+/* Ghost White */
+  /* background-color: #f8f8ff; */
+
+
+
 }

@@ -1,0 +1,269 @@
+/* Estilos para el subrayado animado */
+
+
+  .underline-button2 {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+   text-decoration: none; 
+  }
+  .underline-button2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 1px; /* Tamaño del subrayado */
+    background-color: white; /* Color del subrayado */
+    transform: translateX(-50%) scaleX(0); /* Posiciona el pseudo-elemento en el centro y escala desde 0 */
+    transform-origin: center;
+    transition: width 1s ease, transform 1s ease;
+  }
+  
+  .underline-button2.active::after {
+    width: 65%;
+    transform: translateX(-50%) scaleX(1);
+  }
+  .underline-button {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    text-decoration: none; /* Elimina el subrayado predeterminado del enlace */
+    
+  }
+
+  .underline-button:hover::after {
+    width: 100%;
+    transform: translateX(-50%) scaleX(1); /* Ajusta la escala al 100% desde el centro */
+  }
+  
+  .underline-button::after {
+    content: "";
+    position: absolute;
+    /* height: 1px; */
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 1px; /* Tamaño del subrayado */
+    background-color: white; /* Color del subrayado */
+    transform: translateX(-50%) scaleX(0); /* Posiciona el pseudo-elemento en el centro y escala desde 0 */
+    transform-origin: center;
+    transition: width 0.3s ease, transform 0.3s ease;
+  }
+  .underline-buttondark {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    text-decoration: none; /* Elimina el subrayado predeterminado del enlace */
+    
+  }
+
+  .underline-buttondark:hover::after {
+    width: 100%;
+    transform: translateX(-50%) scaleX(1); /* Ajusta la escala al 100% desde el centro */
+  }
+  .underline-buttondark::after {
+    content: "";
+    position: absolute;
+    /* height: 1px; */
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 1px; /* Tamaño del subrayado */
+    background-color: black; /* Color del subrayado */
+    transform: translateX(-50%) scaleX(0); /* Posiciona el pseudo-elemento en el centro y escala desde 0 */
+    transform-origin: center;
+    transition: width 0.3s ease, transform 0.3s ease;
+  }
+  .underlinecarta {
+    position: relative;
+    display: inline-block;
+  }
+  .underlinecarta::after {
+    content: '';
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    bottom: -13%;
+    height: 1px; /* Grosor del subrayado */
+    background: linear-gradient(to right, rgba(0,0,0,0), currentColor 20%, currentColor 80%, rgba(0,0,0,0));  }
+  
+ 
+
+  .fullHeight {
+  height: 80%;
+}
+.spanfuera>button {
+  display: none;
+}
+
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.bg-paper-texture {
+  /* background-image: url('../public/img/paper2.jpg'); Ajusta el path según donde guardaste la imagen */
+  background-size: fill;
+  background-color: #fffff0;
+  /* background-repeat: no-repeat; */
+}
+.bg-gradientcarta{
+  background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,240,1) 100%);
+}
+.bg-izq{
+    background-image: url('https://raw.githubusercontent.com/AlbbercaGit/videos/0b85648d4566ba293c5782ef7504bea08a709ee2/restaurante.jpg');
+  background-size: fill;
+}
+.bg-grande{
+  background-image: url('../public/img/grande.jpg');
+  /* background-attachment: fixed; */
+
+  /* background-position: 60%; Ajusta según sea necesario */
+  background-repeat: no-repeat;
+  background-size: cover; 
+
+}
+.bg-der{
+  background-image: url('../public/img/larga.jpg');
+  /* background-attachment: fixed; */
+
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+.bg-gradient {
+  background: rgb(2, 0, 36);
+  background: -moz-linear-gradient(180deg, rgb(2, 0, 36) 0%, rgba(255,255,240,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(2,0,36,0) 0%, rgba(255,255,240,1) 100%);
+  background: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgba(255,255,240,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#fffff0",GradientType=1);
+}
+
+
+.bg-gradient-border {
+  border-top: 14px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(180deg, rgba(36, 0, 0, 0) 0%, rgba(255,255,240,1) 100%);
+}.bg-gradient-border-bot {
+  border-bottom: 1px solid;
+
+  border-image-slice: 1;
+  background: linear-gradient(180deg, rgba(45, 34, 255, 0) 70%, rgba(255,255,240,1) 100%);
+}
+.price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.price {
+  text-align: right;
+}
+
+.bg-fixed {
+/* Estilo general del parallax */
+.parallax {
+  background-attachment: fixed; /* Hace que el fondo esté fijo */
+  background-size: cover; /* Asegura que la imagen de fondo cubra todo el contenedor */
+  background-position: center; /* Centra la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+}
+.blanco{
+  /* Ivory */
+  background-color: #fffff0;
+  /* Sonw */
+  /* background-color: #fffafa; */
+/* Ghost White */
+  /* background-color: #f8f8ff; */
+}
+
+/* Estilo opcional para ajustar el alto del parallax */
+.parallax.large {
+  height: 500px; /* Puedes ajustar esta altura según tus necesidades */
+}
+
+.parallax.medium {
+  height: 300px; /* Otra altura opcional */
+}
+
+.parallax.small {
+  height: 200px; /* Otra altura opcional */
+}
+
+  
+}
+
+
+
+
+
+
+
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.transition-transform {
+  transition: transform 0.5s ease;
+}
+
+.transition-opacity {
+  transition: opacity 0.5s ease;
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
+
+
+/* ParallaxImage.css */
+.opacity-0 {
+  opacity: 0;
+}
+
+/* ParallaxImage.css */
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+  height: 100vh; /* Ajusta esto según tus necesidades */
+}
+
+.parallax-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%; /* Ajusta esto según tus necesidades */
+  height: auto;
+  /* background-image: url('your-image-url.jpg'); */
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease-out; /* Ajusta la transición para suavizar */
+}
+
+.rotate-90 {
+  transform: rotate(180deg);
+}
+.button {
+  width: 10px;
+  height: 360px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+@keyframes coverScreen {
+  0% {
+    clip-path: circle(0% at 50% 50%);
+  }
+  100% {
+    clip-path: circle(150% at 50% 50%);
+  }
+}
+
+.cover-screen {
+  animation: coverScreen 1s forwards;
+}
